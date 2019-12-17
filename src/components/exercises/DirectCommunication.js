@@ -41,7 +41,8 @@ const FatherWithOneSon = props =>
         {addFatherSurnameToSingleChild(props.children, props)}
     </View>
 
-export const GrandFather = props => 
+export const GrandFather = props => {
+    return (
     <View>
         <Text {...fontStyle}>Grandfather: { props.name } { props.surname }</Text>
         <Father name='André' surname={props.surname}>
@@ -53,6 +54,8 @@ export const GrandFather = props =>
             <Son name='"Single child"' />
         </FatherWithOneSon>
     </View>
+    );
+}
 
 export default GrandFather;
 

@@ -7,16 +7,21 @@ import EvenOdd from './EvenOdd';
 import SimpleText from './SimpleText';
 import GrandFather from './DirectCommunication';
 import SyncText from './IndirectCommunication';
+import SimpleStackMenu from './SimpleStackMenu';
 
-const stackNavigator = createDrawerNavigator(
+const drawerNavigator = createDrawerNavigator(
   {
-    SonToFatherCommunication:{
-      screen: SyncText,
-      navigationOptions: { title: 'Son-to-Father communication' }
+    SimpleStackMenu: {
+      screen: SimpleStackMenu,
+      navigationOptions: { title: 'Example of a stack menu navigation' }
     },
     FatherToSonCommunication: {
       screen: () => <GrandFather name='Hernesto' surname='Murdock' />,
-      navigationOptions: { title: 'Hierarchical comm. via props' }
+      navigationOptions: { title: 'Father-to-son communication via props' }
+    },
+    SonToFatherCommunication:{
+      screen: SyncText,
+      navigationOptions: { title: 'Son-to-Father communication via callback' }
     },
     ReverseText: {
       screen: () => <Reverse text={'bored'} />,
@@ -36,6 +41,5 @@ const stackNavigator = createDrawerNavigator(
   },
 );
 
-const Menu = createAppContainer(stackNavigator);
-
+const Menu = createAppContainer(drawerNavigator);
 export default Menu;
