@@ -153,3 +153,14 @@
 
     https://github.com/vitalets/react-native-extended-stylesheet
 */
+
+/* NAVIGATION
+
+    https://medium.com/async-la/react-navigation-stacks-tabs-and-drawers-oh-my-92edd606e4db
+*/
+
+/* 
+
+
+
+*/
