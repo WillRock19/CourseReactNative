@@ -6,10 +6,15 @@ import Reverse from './Reverse';
 import EvenOdd from './EvenOdd';
 import SimpleText from './SimpleText';
 import GrandFather from './DirectCommunication';
+import SyncText from './IndirectCommunication';
 
 const stackNavigator = createDrawerNavigator(
   {
-    HierarchicalCommunication: {
+    SonToFatherCommunication:{
+      screen: SyncText,
+      navigationOptions: { title: 'Son-to-Father communication' }
+    },
+    FatherToSonCommunication: {
       screen: () => <GrandFather name='Hernesto' surname='Murdock' />,
       navigationOptions: { title: 'Hierarchical comm. via props' }
     },
