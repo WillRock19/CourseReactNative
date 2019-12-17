@@ -159,8 +159,25 @@
     https://medium.com/async-la/react-navigation-stacks-tabs-and-drawers-oh-my-92edd606e4db
 */
 
-/* 
+/* FLEXBOX
 
+    FLEX CONTAINER: É um conteiner onde todas as características do Flex-box serão implementadas, o pai de todos os itens que terão o flex-box como estilo.
 
+    FLEX ITEM: São os itens que existem dentro de um contêiner
 
+    MAIN AXIS: É o eixo principal de um contêiner. Se o sentido dos itens for "row", será um eixo que começa da esquerda para direita (como o eixo X de uma função); se for "column", será um eixo que começa de cima para baixo (como o eixo Y de uma função)
+
+        MAIN START: Início do eixo principal (caso seja "row", o inicio será o canto mais à esquerda; caso column, mais acima)
+
+        MAIN END:Fim do eixo principal (caso seja "row", o fim será o canto mais à direita; caso column, mais abaixo)
+
+            MAIN SIZE: É todo o tamanho que existe entre o Main Start e o Main End;
+
+    CROSS AXIS: É o eixo secundário, oposto, ao main axis. Se o Main Axis tiver um sentido de row, o Cross Axis terá um de column (em outras palavras: se o main for um eixo X, o cross será um Y), e vice-versa.
+        
+        CROSS START: Segue a mesma ideia do main start, só que para o Cross Axis
+
+        CROSS END: Segue a mesma ideia do main end, só que para o Cross Axis
+
+            CROSS SIZE: É todo o tamanho que existe entre o Cross Start e o Cross End;
 */
