@@ -8,12 +8,22 @@ import SimpleText from './SimpleText';
 import GrandFather from './DirectCommunication';
 import SyncText from './IndirectCommunication';
 import SimpleStackMenu from './SimpleStackMenu';
+import ListFlex from './ListFlex';
+import Circles from './Circles';
 
 const drawerNavigator = createDrawerNavigator(
   {
+    LayoutWithFlexBox: {
+      screen: Circles,
+      navigationOptions: {title: 'Circles created with Flex-box'},
+    },
+    ListOfMovies: {
+      screen: ListFlex,
+      navigationOptions: {title: 'List of movies displaying with flex-box'}
+    },
     SimpleStackMenu: {
       screen: SimpleStackMenu,
-      navigationOptions: { title: 'Example of a stack menu navigation' }
+      navigationOptions: {title: 'Example of a stack menu navigation'}
     },
     FatherToSonCommunication: {
       screen: () => <GrandFather name='Hernesto' surname='Murdock' />,

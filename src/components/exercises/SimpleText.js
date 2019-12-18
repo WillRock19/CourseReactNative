@@ -5,7 +5,7 @@ import { StyleSheet } from 'react-native';
 export default Simple = () => {
     return (
       <View style={style.container}>
-        <Text style={style.bigFont}>Primeiro App 2</Text>
+        <Text style={style.bigFont}>Hello World!</Text>
       </View>
     );
 }
@@ -14,10 +14,10 @@ const style = StyleSheet.create({
     container:{
         flex: 1,
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
     },
     bigFont:{
-        fontSize: 40
+        fontSize: 40,
     }
 });
   
